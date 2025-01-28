@@ -86,7 +86,7 @@ class OrderTest extends PHPUnit_Framework_TestCase
             ->setPaperType('14PT')
             ->setQuantity(500)
             ->setRegionSize('US')
-            ->setCost('cost')
+            ->setCost(500)
             ->addAttributes($attributes)
             ->addSide($side);
 
@@ -97,6 +97,7 @@ class OrderTest extends PHPUnit_Framework_TestCase
             ->setPriority(0)
             ->setShippingFee(10)
             ->setTax(1)
+            ->setOrderTotal(510)
             ->setProductDiscounts(0)
             ->setShippingDiscounts(0)
             ->setVendorId('vendorId')

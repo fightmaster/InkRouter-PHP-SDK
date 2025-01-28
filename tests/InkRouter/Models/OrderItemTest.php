@@ -99,7 +99,7 @@ class OrderItemTest extends PHPUnit_Framework_TestCase
             ->setDaVinciDesignId('d9ea738d-a7e8-4f7e-ab36-f1d9284701e2')
             ->setQuantity(500)
             ->setRegionSize('US')
-            ->setCost('cost')
+            ->setCost(500)
             ->setQualityPriority(5)
             ->setSlaPriority(7)
             ->addAttributes($attributes)

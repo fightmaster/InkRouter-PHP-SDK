@@ -109,6 +109,11 @@ class InkRouter_Models_Order
     private $tax;
 
     /**
+     * @var float
+     */
+    private $orderTotal;
+
+    /**
      * Contains information about order items. Can include one or more order items.
      *
      * @var array
@@ -425,6 +430,25 @@ class InkRouter_Models_Order
     }
 
     /**
+     * @return float
+     */
+    public function getOrderTotal()
+    {
+        return $this->orderTotal;
+    }
+
+    /**
+     * @param float $orderTotal
+     * @return self
+     */
+    public function setOrderTotal($orderTotal)
+    {
+        $this->orderTotal = $orderTotal;
+
+        return $this;
+    }
+
+    /**
      * @return array
      */
     public function getOrderItems()
@@ -474,6 +498,10 @@ class InkRouter_Models_Order
 
         if (isset($this->shippingFee)) {
             $writer->writeElement('shipping_fee', $this->shippingFee);
+        }
+
+        if (isset($this->orderTotal)) {
+            $writer->writeElement('order_total', $this->orderTotal);
         }
 
         if (isset($this->tax)) {

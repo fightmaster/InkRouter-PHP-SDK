@@ -5,6 +5,7 @@
   <delivery_date>2013-05-20T10:20:25+04:00</delivery_date>
   <priority>0</priority>
   <shipping_fee>10</shipping_fee>
+  <order_total>510</order_total>
   <tax>1</tax>
   <product_discounts>0</product_discounts>
   <shipping_discounts>0</shipping_discounts>
@@ -49,7 +50,7 @@
       <paper_type>14PT</paper_type>
       <quantity>500</quantity>
       <region_size>US</region_size>
-      <cost>cost</cost>
+      <cost>500</cost>
       <attributes>
         <scalar_boolean_attribute>
           <type>LABELING</type>
